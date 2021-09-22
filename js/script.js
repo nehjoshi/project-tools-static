@@ -13,20 +13,29 @@ buttonHome.style.color = 'black';
 
 const toggleSection = (section) => {
     if (section === 'home') {
-        homeSection.style.display = 'flex';
-        contSection.style.display='none';
+        contSection.style.animation = 'fade-out 0.4s forwards';
         buttonHome.style.backgroundColor = '#fff';
         buttonHome.style.color = 'black';
         buttonCont.style.backgroundColor = 'transparent';
         buttonCont.style.color = '#fff';
+        setTimeout(() => {
+            contSection.style.display = 'none';
+            homeSection.style.animation = 'fade-in 0.4s forwards';
+            homeSection.style.display = 'flex';
+        }, 500)
     }
     else {
-        homeSection.style.display = 'none';
-        contSection.style.display = 'flex'
+        homeSection.style.animation = 'fade-out 0.4s forwards';
         buttonHome.style.backgroundColor = 'transparent';
         buttonHome.style.color = '#fff';
         buttonCont.style.backgroundColor = '#fff';
         buttonCont.style.color = 'black';
+        setTimeout(() => {
+            homeSection.style.display = 'none';
+            contSection.style.animation = 'fade-in 0.4s forwards';
+            contSection.style.display = 'flex';
+        }, 500)
+
     }
 }
 

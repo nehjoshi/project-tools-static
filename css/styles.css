@@ -82,6 +82,56 @@ nav {
           align-items: center;
 }
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+    display: -webkit-box;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
 .inner2 {
   display: none;
   -webkit-box-orient: vertical;
@@ -100,16 +150,16 @@ nav {
   font-style: italic;
   font-size: 2rem;
   position: relative;
-  opacity: 0;
   top: 20px;
+  opacity: 0;
 }
 
 .heading {
   font-family: "Chakra Petch", sans-serif;
   font-size: 6rem;
   position: relative;
-  opacity: 0;
   top: 20px;
+  opacity: 0;
 }
 
 .planet {

@@ -65,6 +65,23 @@ nav {
     justify-content: center;
     align-items: center;
 }
+@keyframes fade-in {
+    0% {
+        opacity: 0; display: none;
+    }
+    100% {
+        opacity: 1; display: flex;
+    }
+}
+@keyframes fade-out {
+    0% {
+        opacity: 1; display: flex;
+    }
+    100% {
+        opacity: 0; display: none;
+    }
+}
+
 .inner2 {
     display: none;
     flex-direction: column;
@@ -75,15 +92,17 @@ nav {
     font-style: italic;
     font-size: 2rem;
     position: relative;
-    opacity: 0;
     top: 20px;
+    opacity: 0;
+
 }
 .heading {
     font-family: $primary_font;
     font-size: 6rem;
     position: relative;
-    opacity: 0;
     top: 20px;
+    opacity: 0;
+
 }
 .planet {
     position: absolute;
@@ -129,6 +148,7 @@ nav {
     position: relative;
     top: 20px;
     opacity: 0;
+
 }
 .footer {
     position: absolute;
