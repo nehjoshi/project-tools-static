@@ -144,6 +144,11 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.inner2 h2 {
+  text-decoration: underline;
 }
 
 .sub-heading {
@@ -156,7 +161,7 @@ nav {
 
 .heading {
   font-family: "Chakra Petch", sans-serif;
-  font-size: 6rem;
+  font-size: clamp(3.2rem, 6.2vw, 6rem);
   position: relative;
   top: 20px;
   opacity: 0;
@@ -272,5 +277,30 @@ nav {
 .footer i {
   padding: 0px 5px;
   color: #6b6a6a;
+}
+
+.data-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.data-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 100px;
+}
+
+.person-image {
+  border-radius: 50%;
+  height: 100px;
 }
 /*# sourceMappingURL=styles.css.map */

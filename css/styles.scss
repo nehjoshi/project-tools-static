@@ -87,6 +87,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: $primary_font;
+    h2 {
+        text-decoration: underline;
+    }
+    
 }
 .sub-heading {
     font-style: italic;
@@ -98,7 +103,7 @@ nav {
 }
 .heading {
     font-family: $primary_font;
-    font-size: 6rem;
+    font-size: clamp(3.2rem, 6.2vw, 6rem);
     position: relative;
     top: 20px;
     opacity: 0;
@@ -171,4 +176,18 @@ nav {
         padding: 0px 5px;
         color: rgb(107, 106, 106);
     }
+}
+.data-container {
+    display: flex;
+    
+}
+.data-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 100px;
+}
+.person-image {
+    border-radius: 50%;
+    height: 100px;
 }
