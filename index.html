@@ -19,9 +19,9 @@
 
 <body>
     <nav>
-        <img src="images/owasp-logo.png" class="logo">
+        <a href="https://owaspvit.com"><img src="images/owasp-logo.png" class="logo"></a>
         <ul class="nav-ul">
-            <li class="item" id="home_button" onClick="toggleSection('home')">Home</li>
+            <li class="item" id="home_button" onClick="toggleSection('home')">Home</li> <!--Nav-->
             <li class="item" id="about_button" onClick="toggleSection('about')">About</li>
             <li class="item" id="cont_button" onClick="toggleSection('cont')">Contributors</li>
         </ul>
@@ -29,14 +29,14 @@
     <img src="/images/planet.gif" class="planet">
     <div class="main">
 
-        <div class="inner1" id="home">
+        <div class="inner1" id="home">      <!--Landing section-->
             <span class="sub-heading">Owasp Vitcc Presents</span>
             <h2 class="heading">PROJECT TOOLS</h2>
-            <h5>An exclusive set of tools for all cyber security enthusiasts!</h5><br/>
-            <div class="button">Go to project tools</div>
+            <h5 class="tagline">An exclusive set of tools for all cyber security enthusiasts</h5><br />
+            <a href="https://github.com/owaspvit/project_tools"><div class="button">Go to project tools</div></a>
 
         </div>
-        <div class="inner2">
+        <div class="inner2">        <!--Picture section - contibutors-->
             <div class="data-container">
                 <!--First row-->
                 <div class="data-wrapper">
@@ -110,10 +110,16 @@
             </div>
 
         </div>
-        <div class="inner3">
-            <h1>About</h1>
-            <p>Project Tools is a set of valuable and intriguing tools made exclusively for people interested in cyber
-                security and technical computing!</p>
+        <div class="inner3">        <!--About Section-->
+            <h1 class="heading" id="about-heading">About</h1>
+            <p class="about-text">Project Tools is a set of valuable and intriguing tools, developed by some tech-savvy
+                individuals at OWASP VITCC, made exclusively for people interested in cyber
+                security and technical computing! Looking to kickstart your journey into cybersec?
+                You've come to the right place to explore! Some of the tools we have are NMAP, TraceRoute, JoomScan and
+                more!
+                So what are you waiting for? Start exploring now!
+            </p>
+            <a href="https://github.com/owaspvit/project_tools"><div class="button" id="about-button">Explore now</div></a>
         </div>
     </div>
 

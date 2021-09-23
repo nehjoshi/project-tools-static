@@ -1,5 +1,6 @@
 const sub = document.querySelector(".sub-heading");
 const heading = document.querySelector(".heading");
+const tagline = document.querySelector(".tagline");
 const btn = document.querySelector(".button");
 const homeSection = document.querySelector('.inner1');
 const contSection = document.querySelector('.inner2');
@@ -72,6 +73,12 @@ tl.to(sub, {
     ease: Power2.easeIn
 })
     .to(heading, {
+        y: -20,
+        opacity: 1,
+        duration: 0.3,
+        ease: Power2.easeIn,
+    })
+    .to(tagline, {
         y: -20,
         opacity: 1,
         duration: 0.3,
