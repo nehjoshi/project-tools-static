@@ -327,6 +327,7 @@ nav {
 
 .data-wrapper p {
   font-size: clamp(0.5rem, 1.2vw, 1.1rem);
+  color: #f0f00e;
 }
 
 .person-image {
@@ -335,7 +336,7 @@ nav {
 }
 
 .about-text {
-  font-size: clamp(1rem, 1.4vw, 1.3rem);
+  font-size: clamp(0.7rem, 1.4vw, 1.3rem);
 }
 
 .footer {
